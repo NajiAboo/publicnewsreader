@@ -7,4 +7,4 @@
 
 # Video
 
-[![IMAGE ALT TEXT HERE](talkinghead.png](https://youtu.be/o4VenL11QLg)
+[![IMAGE ALT TEXT HERE](talkinghead.png)](https://youtu.be/o4VenL11QLg)
