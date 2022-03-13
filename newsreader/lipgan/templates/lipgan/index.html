@@ -1,0 +1,46 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'lipgan/index.css' %}">
+</head>
+<body style="width: 100%;">
+    <header>
+        News Reader
+    </header>
+   
+    <div>
+        <label for=""> Please enter the a text and click play button</label>
+        <form action="" method="post">
+            {% csrf_token %}
+        <div>
+            <textarea name="txtArea" id="idtxtArea" cols="30" rows="10"></textarea>
+            <button type="submit">play</button>
+        </div>
+     </form>
+
+
+        <div>
+       
+
+            <video width="320" height="240" controls autoplay>
+                <source src="{{url}}" type="video/mp4" codecs="av01.0.00M.08, opus">
+             </video>
+
+        </div>
+
+        {% if url %}
+        <p>{{url}}</p>
+        {% endif %}
+         
+      </div>
+   
+    
+</body>
+</html>

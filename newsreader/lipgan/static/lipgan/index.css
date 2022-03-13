@@ -1,0 +1,21 @@
+
+body, html {
+    width: 100%; }
+  
+  footer {
+    width: 100%;
+  }
+
+.box {
+    display: flex;
+  }
+
+  .box > * {
+    flex: .5  1
+
+  }
+
+
+header {text-align: center; font-weight: bold; padding: 20px; font-size: 30pt;}
+p {text-align: center;}
+div {text-align: center;}
